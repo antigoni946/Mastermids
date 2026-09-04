@@ -23,4 +23,17 @@ details {
   color: rgb(109, 80, 86);
   text-align: center;
   font-size: 21px;
+  background-color: rgb(230, 226, 219);
+}
+
+#header {
+  text-align: center;
+  margin: 40px;
+}
+
+.answer-box {
+  padding: 10px;
+  background-color: rgb(238, 120, 120);
+  border-radius: 10px;
+  cursor: pointer;
 }

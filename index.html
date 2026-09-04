@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -46,5 +55,203 @@
       <li>⚠️ You only have 10 minutes!</li>
       <li>Question: Is this a scam?</li>
     </details>
+    <div class="d-flex gap-2">
+      <button
+        type="button"
+        class="btn answer-box"
+        data-bs-toggle="modal"
+        data-bs-target="#yes-modal"
+      >
+        Yes
+      </button>
+
+      <button
+        type="button"
+        class="btn answer-box"
+        data-bs-toggle="modal"
+        data-bs-target="#no-modal"
+      >
+        No
+      </button>
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="yes-modal"
+        tabindex="-1"
+        aria-labelledby="yes-modal-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="yes-modal-label">Correct</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              It creates urgency and offers a prize you never entered to win.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="no-modal"
+        tabindex="-1"
+        aria-labelledby="no-modal-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="no-modal-label">Wrong!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">It creates urgency and offers a</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <details>
+      <summary>2nd question</summary>
+      <li>Message:🔒 Your bank account has been locked!</li>
+
+      <li>
+        Verify your account immediately by entering your password and card
+        details here.
+      </li>
+      <li>⚠️ You only have 10 minutes!</li>
+      <li>Question: Is this a scam?</li>
+    </details>
+
+    <div class="d-flex gap-2">
+      <button
+        type="button"
+        class="btn answer-box"
+        data-bs-toggle="modal"
+        data-bs-target="#yes-modal"
+      >
+        Yes
+      </button>
+
+      <button
+        type="button"
+        class="btn answer-box"
+        data-bs-toggle="modal"
+        data-bs-target="#no-modal"
+      >
+        No
+      </button>
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="yes-modal"
+        tabindex="-1"
+        aria-labelledby="yes-modal-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="yes-modal-label">Correct</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              It asks for sensitive information and pressures you to act
+              immediately.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="no-modal"
+        tabindex="-1"
+        aria-labelledby="no-modal-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="no-modal-label">Wrong!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              It asks for sensitive information and pressures you to act
+              immediately.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
