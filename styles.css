@@ -37,3 +37,7 @@ details {
   border-radius: 10px;
   cursor: pointer;
 }
+question {
+  color: rgb(109, 80, 86);
+  font-size: 21px;
+}
