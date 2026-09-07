@@ -61,3 +61,18 @@ h4 {
 summary {
   color: rgb(235, 39, 111);
 }
+
+.question-section {
+  background-color: rgba(239, 196, 202, 0.26);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.answer-box {
+  color: aliceblue;
+}
+.correct-box {
+  background-color: white;
+
+  color: pink;
+}
