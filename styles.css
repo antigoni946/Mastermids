@@ -66,3 +66,14 @@ summary {
   height: 200px;
   width: 200px;
 }
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.banner-details {
+  flex: 1;
+}
