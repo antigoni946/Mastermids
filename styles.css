@@ -207,3 +207,120 @@ img {
 h1 {
   margin-top: 60px;
 }
+/* ========================= FINAL OUTRO ========================= */
+.outro {
+  margin-top: 100px;
+  padding: 100px 20px 80px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(217, 70, 239, 0.14),
+      transparent 60%
+    ),
+    #050505;
+  border-top: 1px solid rgba(217, 70, 239, 0.3);
+}
+.outro-content {
+  max-width: 800px;
+  margin: auto;
+} /* ========================= TEAM LOGO ========================= */
+.team-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 25px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(217, 70, 239, 0.5));
+  transition: 0.3s ease;
+}
+.team-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 25px rgba(217, 70, 239, 0.8));
+} /* SHIELD ICON */
+.outro-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+} /* MAIN MESSAGE */
+.outro h2 {
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #d946ef, #7c3cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.outro p {
+  color: #dcdcdc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.outro-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: white !important;
+} /* LINE */
+.outro-line {
+  width: 100px;
+  height: 2px;
+  margin: 35px auto;
+  background: #d946ef;
+  box-shadow: 0 0 15px #d946ef;
+} /* THANK YOU */
+.thank-you {
+  font-size: 15px !important;
+  color: #aaa !important;
+  margin-bottom: 30px;
+} /* ========================= BACK TO TOP ========================= */
+.back-top {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.back-top:hover {
+  background: #d946ef;
+  border-color: #d946ef;
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.5);
+  transform: translateY(-3px);
+} /* ========================= FOOTER ========================= */
+.footer {
+  padding: 35px 20px;
+  text-align: center;
+  background: #020202;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer h3 {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.footer p {
+  color: #888;
+  font-size: 13px;
+}
+.footer .copyright {
+  margin-top: 18px;
+  font-size: 11px;
+  color: #555;
+} /* ========================= MOBILE ========================= */
+@media (max-width: 700px) {
+  .outro {
+    padding: 70px 20px 60px;
+  }
+  .team-logo {
+    width: 110px;
+  }
+  .outro h2 {
+    font-size: 28px;
+  }
+  .outro p {
+    font-size: 15px;
+  }
+}
