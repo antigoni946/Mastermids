@@ -490,3 +490,416 @@ h1 {
     font-size: 15px;
   }
 }
+/* =========================
+   SCAMS BY THE NUMBERS
+========================= */
+
+.stats-section {
+  padding: 100px 25px;
+
+  background:
+    radial-gradient(circle at top, rgba(217, 70, 239, 0.12), transparent 55%),
+    #07050a;
+
+  color: white;
+
+  border-top: 1px solid rgba(217, 70, 239, 0.2);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.stats-header {
+  max-width: 800px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.stats-label {
+  display: inline-block;
+
+  color: #d946ef;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.stats-header h2 {
+  font-size: 42px;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+
+  background: linear-gradient(90deg, #ffffff, #d946ef, #9b5cff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-header p {
+  color: #aaa;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   STATISTICS CARDS
+========================= */
+
+.stats-grid {
+  max-width: 1050px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #d946ef;
+
+  box-shadow: 0 0 30px rgba(217, 70, 239, 0.18);
+}
+
+.main-stat {
+  background: linear-gradient(
+    145deg,
+    rgba(217, 70, 239, 0.16),
+    rgba(255, 255, 255, 0.03)
+  );
+}
+
+.stat-icon {
+  display: block;
+
+  font-size: 35px;
+
+  margin-bottom: 15px;
+}
+
+.stat-card h3 {
+  font-size: 42px;
+
+  margin: 5px 0 10px;
+
+  color: white;
+}
+
+.stat-card p {
+  color: #bdbdc8;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.stat-source {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #777;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+/* =========================
+   CHART BOX
+========================= */
+
+.loss-chart {
+  max-width: 900px;
+
+  margin: 70px auto 0;
+
+  padding: 45px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(217, 70, 239, 0.2);
+
+  border-radius: 24px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* CHART TITLE */
+
+.chart-title {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.chart-title h3 {
+  font-size: 23px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.chart-title p {
+  color: #888;
+
+  font-size: 13px;
+}
+
+/* =========================
+   CHART LAYOUT
+========================= */
+
+.chart-layout {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 70px;
+}
+
+/* =========================
+   PIE CHART
+========================= */
+
+.pie-chart {
+  width: 260px;
+
+  height: 260px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #d946ef 0deg 179deg,
+    #7c3cff 179deg 258deg,
+    #32153c 258deg 360deg
+  );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 0 45px rgba(217, 70, 239, 0.25);
+}
+
+/* CENTER */
+
+.pie-center {
+  width: 130px;
+
+  height: 130px;
+
+  border-radius: 50%;
+
+  background: #08060b;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.pie-center strong {
+  font-size: 20px;
+}
+
+.pie-center span {
+  color: #777;
+
+  font-size: 10px;
+
+  margin-top: 5px;
+}
+
+/* =========================
+   LEGEND
+========================= */
+
+.chart-legend {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.legend-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.legend-dot {
+  width: 14px;
+
+  height: 14px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.legend-dot.investment {
+  background: #d946ef;
+}
+
+.legend-dot.imposter {
+  background: #7c3cff;
+}
+
+.legend-dot.other {
+  background: #32153c;
+}
+
+.legend-item strong {
+  display: block;
+
+  color: white;
+
+  font-size: 14px;
+}
+
+.legend-item small {
+  display: block;
+
+  color: #888;
+
+  margin-top: 4px;
+
+  font-size: 12px;
+}
+
+/* =========================
+   WARNING MESSAGE
+========================= */
+
+.stats-message {
+  max-width: 800px;
+
+  margin: 60px auto 25px;
+
+  padding: 25px 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  background: rgba(217, 70, 239, 0.08);
+
+  border-left: 3px solid #d946ef;
+
+  border-radius: 10px;
+}
+
+.stats-message span {
+  font-size: 30px;
+}
+
+.stats-message p {
+  margin: 0;
+
+  color: #cfcfd5;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+.stats-message strong {
+  color: white;
+}
+
+/* =========================
+   SOURCE
+========================= */
+
+.stats-section > .stats-source {
+  text-align: center;
+
+  color: #555;
+
+  font-size: 10px;
+
+  margin-top: 30px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+  .stats-section {
+    padding: 70px 20px;
+  }
+
+  .stats-header h2 {
+    font-size: 30px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loss-chart {
+    padding: 30px 20px;
+  }
+
+  .chart-layout {
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .pie-chart {
+    width: 220px;
+
+    height: 220px;
+  }
+
+  .stats-message {
+    align-items: flex-start;
+  }
+}
