@@ -1,405 +1,611 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think Before You Click</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Think Before You Click</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <div class="header">
-    <h1>THINK BEFORE YOU CLICK</h1>
-  </div>
-
-  <h5>Scamming</h5>
-
-  <div class="scam-banner">
-    <div class="banner-buttons">
-
-      <details class="banner-details">
-        <summary>What is scamming?</summary>
-        <p>
-          Scamming is when someone tricks you into giving away money, personal
-          information, passwords, or access to your accounts. Scammers often use
-          fake messages, emails, websites, prizes, or social media accounts to
-          deceive people.
-        </p>
-      </details>
-      <details class="banner-details">
-        <summary>Warning signs!</summary>
-
-        <ol>Someone is rushing you.</ol>
-        <ol>You are promised something unbelievable.</ol>
-        <ol>They ask for passwords or codes.</ol>
-        <ol>There is a suspicious link.</ol>
-        <ol>They ask for money unexpectedly.</ol>
-
-      </details>
+  <body>
+    <div class="header">
+      <h1>THINK BEFORE YOU CLICK</h1>
     </div>
-  </div>
-  <hr>
 
+    <h5>Scamming</h5>
 
-  <h2>How to protect yourself?</h2>
-  <ol>
-    <li>🔍 CHECK — Is the message really from who it claims to be?</li>
-    <li>🤔 THINK — Does the offer seem too good to be true?</li>
-    <li>🔗 DON’T CLICK — Never click suspicious links.</li>
-    <li>🔒 PROTECT — Never share passwords or personal information.</li>
-  </ol>
-  <div><img src="scam-scams.gif" alt="penguin" id="penguin" /></div>
-  <h2>Test your knowledge with game 1!</h2>
-  <h3>Spot the scam!</h3>
-  <h4>Start!</h4>
+    <div class="scam-banner">
+      <div class="banner-buttons">
+        <details class="banner-details">
+          <summary>What is scamming?</summary>
+          <p>
+            Scamming is when someone tricks you into giving away money, personal
+            information, passwords, or access to your accounts. Scammers often
+            use fake messages, emails, websites, prizes, or social media
+            accounts to deceive people.
+          </p>
+        </details>
+        <details class="banner-details">
+          <summary>Warning signs!</summary>
 
-  <details>
+          <ol>
+            <li>Someone is rushing you.</li>
+            <li>You are promised something unbelievable.</li>
+            <li>They ask for passwords or codes.</li>
+            <li>There is a suspicious link.</li>
+            <li>They ask for money unexpectedly.</li>
+          </ol>
+        </details>
+      </div>
+    </div>
+    <hr />
 
-    <summary>1st question</summary>
+    <h2>How to protect yourself?</h2>
     <ol>
-      Message: 🎉 CONGRATULATIONS! You have won a brand-new iPhone! Click
-      the link below to claim your prize NOW!
+      <li>🔍 CHECK — Is the message really from who it claims to be?</li>
+      <li>🤔 THINK — Does the offer seem too good to be true?</li>
+      <li>🔗 DON’T CLICK — Never click suspicious links.</li>
+      <li>🔒 PROTECT — Never share passwords or personal information.</li>
     </ol>
-    <ol>⚠️ You only have 10 minutes!</ol>
-    <ol>Question: Is this a scam?</ol>
+    <div><img src="scam-scams.gif" alt="penguin" id="penguin" /></div>
+    <h2>Test your knowledge with game 1!</h2>
+    <h3>Spot the scam!</h3>
+    <h4>Start!</h4>
 
-    <div class="d-flex gap-2">
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-1">
-        Yes
-      </button>
-
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#no-modal-1">
-        No
-      </button>
-    </div>
-  </details>
-
-  <div class="modal fade" id="yes-modal-1" tabindex="-1" aria-labelledby="yes-modal-title-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="yes-modal-title-1">Correct</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          It creates urgency and offers a prize you never entered to win.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="no-modal-1" tabindex="-1" aria-labelledby="no-modal-title-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="no-modal-title-1">Wrong!</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          It creates urgency and offers a prize you never entered to win.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <details>
-    <summary>2nd question</summary>
-    <ul>
-      <ol>Message: 🔒 Your bank account has been locked!</ol>
+    <details>
+      <summary>1st question</summary>
       <ol>
-        Verify your account immediately by entering your password and card
-        details here.
+        Message: 🎉 CONGRATULATIONS! You have won a brand-new iPhone! Click the
+        link below to claim your prize NOW!
       </ol>
-      <ol>⚠️ You only have 10 minutes!</ol>
-      <ol>Question: Is this a scam?</ol>
-    </ul>
-
-    <div class="d-flex gap-2">
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-2">
-        Yes
-      </button>
-
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#no-modal-2">
-        No
-      </button>
-    </div>
-  </details>
-
-  <div class="modal fade" id="yes-modal-2" tabindex="-1" aria-labelledby="yes-modal-title-2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="yes-modal-title-2">Correct</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          It asks for sensitive information and pressures you to act
-          immediately.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="no-modal-2" tabindex="-1" aria-labelledby="no-modal-title-2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="no-modal-title-2">Wrong!</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          It asks for sensitive information and pressures you to act
-          immediately.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <details>
-    <summary>3rd question</summary>
-    <ul>
       <ol>
-        Message: 📦 Your package from [a store you actually ordered from] has
-        been shipped! You can track your delivery through the official
-        delivery company's app or website. Expected delivery: Tuesday.
+        ⚠️ You only have 10 minutes!
       </ol>
-    </ul>
-
-    <div class="d-flex gap-2">
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-3">
-        Yes
-      </button>
-
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#no-modal-3">
-        No
-      </button>
-    </div>
-  </details>
-
-  <div class="modal fade" id="yes-modal-3" tabindex="-1" aria-labelledby="yes-modal-title-3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="yes-modal-title-3">Wrong</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Why? You actually ordered something, and you're directed to the
-          official app/website rather than a suspicious link.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="no-modal-3" tabindex="-1" aria-labelledby="no-modal-title-3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="no-modal-title-3">Correct</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Why? You actually ordered something, and you're directed to the
-          official app/website rather than a suspicious link.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <details>
-    <summary>4th question</summary>
-    <ul>
       <ol>
-        Message: 📚 Reminder: Your science project is due on Friday. Please
-        submit it through your school's usual online platform. — Your Science
-        Teacher
+        Question: Is this a scam?
       </ol>
-    </ul>
 
-    <div class="d-flex gap-2">
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-4">
-        Yes
-      </button>
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-1"
+        >
+          Yes
+        </button>
 
-      <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#no-modal-4">
-        No
-      </button>
-    </div>
-  </details>
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#no-modal-1"
+        >
+          No
+        </button>
+      </div>
+    </details>
 
-  <div class="modal fade" id="yes-modal-4" tabindex="-1" aria-labelledby="yes-modal-title-4" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="yes-modal-title-4">Wrong</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Why? It's an expected message and doesn't ask for passwords, money,
-          or suspicious personal information.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
+    <div
+      class="modal fade"
+      id="yes-modal-1"
+      tabindex="-1"
+      aria-labelledby="yes-modal-title-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="yes-modal-title-1">Correct</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            It creates urgency and offers a prize you never entered to win.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="no-modal-4" tabindex="-1" aria-labelledby="no-modal-title-4" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="no-modal-title-4">Correct</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Why? It's an expected message and doesn't ask for passwords, money,
-          or suspicious personal information.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <h2>Continue with the final game!</h2>
-  <h3>Scam detector!</h3>
-  <h4>Start!</h4>
-  <ul>
-    <h2>🎮 Question 1</h2>
-    <h3>You receive this message:</h3>
-  🎁 You have won €500! Click this link within 5 minutes to claim your prize!</ol>
-<p>What should you do?</p>
-
-        </div>
-      </div>
-    </div>
-    <!-- Button trigger modal -->
-      <ol>A. Click the link</ol>
-      <ol>B. Give them your information</ol>
-      <ol>C. 🚨 Ignore/report it because it looks like a scam</ol>
-      <ol>D. Send it to your friends</ol>
-  </ul>
-  <div class="d-flex gap-2">
-    <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-5">
-      Correct answer
-
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- Button trigger modal -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="yes-modal-5" tabindex="-1" aria-labelledby="yes-modal-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="yes-modal-label">Did you get it right?</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          C
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
+    <div
+      class="modal fade"
+      id="no-modal-1"
+      tabindex="-1"
+      aria-labelledby="no-modal-title-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="no-modal-title-1">Wrong!</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            It creates urgency and offers a prize you never entered to win.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </h2> 🎮 Question 2</h2>
 
-  <h3>You receive this message from your school’s official platform:</h3>
+    <details>
+      <summary>2nd question</summary>
+      <ul>
+        <ol>
+          Message: 🔒 Your bank account has been locked!
+        </ol>
+        <ol>
+          Verify your account immediately by entering your password and card
+          details here.
+        </ol>
+        <ol>
+          ⚠️ You only have 10 minutes!
+        </ol>
+        <ol>
+          Question: Is this a scam?
+        </ol>
+      </ul>
 
-  <ol>📚 Reminder: Your science project is due Friday. Please submit it through the school platform.
-  </ol>
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-2"
+        >
+          Yes
+        </button>
 
-  <ol>What should you do?</ol>
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#no-modal-2"
+        >
+          No
+        </button>
+      </div>
+    </details>
 
-  <ol>A. 🚨 Report it as a scam</ol>
-  <ol>B. Ignore every school message</ol>
-  <ol>C. Share your password</ol>
-  <ol>D. ✅ Check the platform and submit your project</ol>
-
-  </ul>
-  <div class="d-flex gap-2">
-    <button type="button" class="btn answer-box" data-bs-toggle="modal" data-bs-target="#yes-modal-6">
-      Correct answer
-
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- Button trigger modal -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="yes-modal-6" tabindex="-1" aria-labelledby="yes-modal-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-6" id="yes-modal-label">Did you get it right?</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          D
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
+    <div
+      class="modal fade"
+      id="yes-modal-2"
+      tabindex="-1"
+      aria-labelledby="yes-modal-title-2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="yes-modal-title-2">Correct</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            It asks for sensitive information and pressures you to act
+            immediately.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
+    <div
+      class="modal fade"
+      id="no-modal-2"
+      tabindex="-1"
+      aria-labelledby="no-modal-title-2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="no-modal-title-2">Wrong!</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            It asks for sensitive information and pressures you to act
+            immediately.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <details>
+      <summary>3rd question</summary>
+      <ul>
+        <ol>
+          Message: 📦 Your package from [a store you actually ordered from] has
+          been shipped! You can track your delivery through the official
+          delivery company's app or website. Expected delivery: Tuesday.
+        </ol>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-3"
+        >
+          Yes
+        </button>
+
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#no-modal-3"
+        >
+          No
+        </button>
+      </div>
+    </details>
+
+    <div
+      class="modal fade"
+      id="yes-modal-3"
+      tabindex="-1"
+      aria-labelledby="yes-modal-title-3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="yes-modal-title-3">Wrong</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Why? You actually ordered something, and you're directed to the
+            official app/website rather than a suspicious link.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="no-modal-3"
+      tabindex="-1"
+      aria-labelledby="no-modal-title-3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="no-modal-title-3">Correct</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Why? You actually ordered something, and you're directed to the
+            official app/website rather than a suspicious link.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <details>
+      <summary>4th question</summary>
+      <ul>
+        <ol>
+          Message: 📚 Reminder: Your science project is due on Friday. Please
+          submit it through your school's usual online platform. — Your Science
+          Teacher
+        </ol>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-4"
+        >
+          Yes
+        </button>
+
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#no-modal-4"
+        >
+          No
+        </button>
+      </div>
+    </details>
+
+    <div
+      class="modal fade"
+      id="yes-modal-4"
+      tabindex="-1"
+      aria-labelledby="yes-modal-title-4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="yes-modal-title-4">Wrong</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Why? It's an expected message and doesn't ask for passwords, money,
+            or suspicious personal information.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="no-modal-4"
+      tabindex="-1"
+      aria-labelledby="no-modal-title-4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="no-modal-title-4">Correct</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Why? It's an expected message and doesn't ask for passwords, money,
+            or suspicious personal information.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Continue with the final game!</h2>
+    <h3>Scam detector!</h3>
+    <h4>Start!</h4>
+    <section aria-labelledby="final-question-1">
+      <h2 id="final-question-1">🎮 Question 1</h2>
+      <h3>You receive this message:</h3>
+      <p>
+        🎁 You have won €500! Click this link within 5 minutes to claim your
+        prize!
+      </p>
+      <p>What should you do?</p>
+      <ol type="A">
+        <li>Click the link</li>
+        <li>Give them your information</li>
+        <li>🚨 Ignore/report it because it looks like a scam</li>
+        <li>Send it to your friends</li>
+      </ol>
+
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-5"
+        >
+          Correct answer
+        </button>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="yes-modal-5"
+      tabindex="-1"
+      aria-labelledby="yes-modal-label-5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="yes-modal-label-5">
+              Did you get it right?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">C</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section aria-labelledby="final-question-2">
+      <h2 id="final-question-2">🎮 Question 2</h2>
+      <h3>You receive this message from your school's official platform:</h3>
+      <p>
+        📚 Reminder: Your science project is due Friday. Please submit it
+        through the school platform.
+      </p>
+      <p>What should you do?</p>
+      <ol type="A">
+        <li>🚨 Report it as a scam</li>
+        <li>Ignore every school message</li>
+        <li>Share your password</li>
+        <li>✅ Check the platform and submit your project</li>
+      </ol>
+
+      <div class="d-flex gap-2">
+        <button
+          type="button"
+          class="btn answer-box"
+          data-bs-toggle="modal"
+          data-bs-target="#yes-modal-6"
+        >
+          Correct answer
+        </button>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="yes-modal-6"
+      tabindex="-1"
+      aria-labelledby="yes-modal-label-6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id="yes-modal-label-6">
+              Did you get it right?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">D</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
