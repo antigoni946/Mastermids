@@ -21,6 +21,21 @@
   </head>
 
   <body>
+    <!-- TOP NAVIGATION BANNER -->
+    <header class="top-banner">
+      <div class="nav-title">🛡️ DIGITAL WELLBEING</div>
+      <nav class="nav-buttons">
+        <button onclick="showInfo('help')">HELP</button>
+        <button onclick="showInfo('about')">ABOUT US</button>
+        <button onclick="showInfo('scamming')">SCAMMING</button>
+      </nav>
+    </header>
+    <!-- INFORMATION POPUP -->
+    <div id="info-box" class="info-box">
+      <button class="close-btn" onclick="closeInfo()">✕</button>
+      <h2 id="info-title"></h2>
+      <p id="info-text"></p>
+    </div>
     <div class="header">
       <h1>THINK BEFORE YOU CLICK</h1>
     </div>
@@ -63,13 +78,22 @@
     </div>
     <hr />
 
-    <h2>How to protect yourself?</h2>
-    <ol>
-      <li>🔍 CHECK — Is the message really from who it claims to be?</li>
-      <li>🤔 THINK — Does the offer seem too good to be true?</li>
-      <li>🔗 DON’T CLICK — Never click suspicious links.</li>
-      <li>🔒 PROTECT — Never share passwords or personal information.</li>
-    </ol>
+    <div class="protection-content">
+      <div>
+        <h2>How to protect yourself?</h2>
+        <ol>
+          <li>🔍 CHECK — Is the message really from who it claims to be?</li>
+          <li>🤔 THINK — Does the offer seem too good to be true?</li>
+          <li>🔗 DON’T CLICK — Never click suspicious links.</li>
+          <li>🔒 PROTECT — Never share passwords or personal information.</li>
+        </ol>
+      </div>
+      <img
+        src="./scam%20images%20pink%20-%20Google%20Search.png"
+        alt="Pink scam awareness illustration"
+        class="protection-image"
+      />
+    </div>
 
     <h2>Test your knowledge with game 1!</h2>
     <h3>Spot the scam!</h3>
@@ -611,7 +635,27 @@
         </div>
       </div>
     </div>
-
+    <script>
+      function showInfo(type) {
+        const box = document.getElementById("info-box");
+        const title = document.getElementById("info-title");
+        const text = document.getElementById("info-text");
+        box.style.display = "block";
+        if (type === "help") {
+          title.innerHTML = "❓ HELP — HOW TO USE THE WEBSITE";
+          text.innerHTML = ` Welcome! 👋<br><br> Use the buttons at the top to navigate through our website.<br><br> 🏠 Start at the main title and introduction.<br> 🧠 Learn what scams are and how they work.<br> 🚨 Look at the warning signs of a scam.<br> 🛡️ Learn how to protect yourself online.<br> 🎮 Take our Scam Detector quiz at the end!<br><br> Remember: <strong>Think before you click.</strong> `;
+        } else if (type === "about") {
+          title.innerHTML = "👥 ABOUT US";
+          text.innerHTML = ` We are a student team working on a Digital Wellbeing project. 💻<br><br> Our goal is to help young people become more aware of online scams and learn how to stay safe on the internet.<br><br> 👩‍💻 Our Team<br> We created this website together by researching, designing and coding the project.<br><br> We hope our website helps you think twice before clicking suspicious links or sharing personal information. `;
+        } else if (type === "scamming") {
+          title.innerHTML = "🚨 SCAMMING";
+          text.innerHTML = ` Online scams are becoming more common every day, and people can sometimes get scammed very easily.<br><br> Scammers use fake messages, websites, emails and social media accounts to trick people into giving away money, passwords or personal information.<br><br> ⚠️ Some scams look extremely real, which is why it is important to stop and think before you click.<br><br> 🧠 <strong>STOP. THINK. CHECK.</strong><br><br> Learning how scams work is one of the best ways to protect yourself. `;
+        }
+      }
+      function closeInfo() {
+        document.getElementById("info-box").style.display = "none";
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
