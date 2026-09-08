@@ -42,7 +42,7 @@ question {
   font-size: 21px;
 }
 h2 {
-  color: rgb(109, 80, 86);
+  color: rgb(109, 80, 86) !important;
   font-size: 23px;
 }
 
@@ -85,7 +85,7 @@ h3 {
   font-size: 23px;
 }
 h4 {
-  color: rgb(109, 80, 86);
+  color: rgb(109, 80, 86) !important;
   font-size: 23px;
 }
 summary {
@@ -1051,7 +1051,7 @@ details ol {
 }
 
 .modal-body {
-  color: #dcdcdc !important;
+  color: #0c0101 !important;
   line-height: 1.7;
 }
 
